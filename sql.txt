@@ -1,0 +1,34 @@
+select d.dept_no, e.first_name from employees e, dept_emp d where e.emp_no= d.emp_no order by d.dept_no;
+
+query 1:-
+select dept_no , count(emp_no) from  dept_emp group by dept_no;
+
+
+dept_no
+count(emp_no)
+d001
+20211
+d002
+17346
+d003
+17786
+d004
+73485
+d005
+85707
+d006
+20117
+d007
+52245
+d008
+21126
+d009
+23580
+
+query 2;
+select  max(s.salary) as high from salaries s, employees e  group by e.hire_date ;
+select  min(s.salary) as low from salaries s, employees e  group by e.hire_date ;
+select 
+
+query 3:-
+select (s.salary - b.salaries) from salaries s, salaries b having  s.emp_no=b.emp_no and s.to_date-
